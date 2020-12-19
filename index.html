@@ -29,15 +29,15 @@
 
                 <ul class="mainMenu">
                     <li class="dark" >Modo Nocturno</li>
-                    <li><a class="nav2" href="Favoritos">Favoritos</a></li>
-                    <li><a class="nav2" href="Mis GIFOS">Mis GIFOS</a></li>
+                    <li class="li1"><a id="idfav" class="nav2" href="favoritos.html">Favoritos</a></li>
+                    <li class="li1"><a id="idmisgifos" class="nav2" href="MIS GIFOS.html">Mis GIFOS</a></li>
                     <img src="./assets/scripts/" alt="">
                 </ul>
             </div>
 
             <div class="container3">
                 <h1 class="inspirate colordetexto">
-                    Inspirate, busca, guarda y crea los mejores GIFOS
+                    Inspirate, busca, guarda y crea <br> los mejores GIFOS
                 </h1>
 
                 <div class="ilu">
@@ -46,12 +46,16 @@
                     </label>
                 </div>
 
-                
-                <div class="search">
-                    <input type="search" class="searchbox" placeholder="Busca GIFOS y más" id="search">
-                    <img alt="" class="searchicon">
-                    <input class="btn" type="submit" value="Buscar" id="btn">
-                
+                <div class="searchdiv">    
+                    <div class="search">
+                        <input type="search" class="searchbox" placeholder="Busca GIFOS y más" id="search">
+                        <img alt="" class="searchicon">
+                        <ul id="ul0"></ul>
+                    </div>
+
+                    <div>
+                        <input class="btn" type="submit" value="Buscar" id="btn">
+                    </div>
                 </div>
 
                 <div class="trending1">
@@ -105,18 +109,20 @@
 
     
     <footer class="footer">
-        <div>
-            <p class="compartir">Compartir en:</p>
-        </div>
-        <div class="icon">
-            <a href="https://es-la.facebook.com/" target="_blank" class="icon2"><i class="fa fa-facebook" ></i></a>
-            <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="icon2"><i class="fa fa-instagram"></i></a>
-            <a href="https://twitter.com/?lang=es" target="_blank" class="icon2"><i class="fa fa-twitter "></i></a>
-        <div>
-            <p class="copyright">© GIFOS 2020 All Rights Reserved</p>
+        <div class="foot">
+                <p class="compartir">Compartir en:</p>
+            <div class="icon2">
+                <a href="https://es-la.facebook.com/" target="_blank" class="fb"><i class="fa fa-facebook" ></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank" class="tw"><i class="fa fa-twitter "></i></a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="ig"><i class="fa fa-instagram"></i></a>
+                
+            </div>
+                <p class="copyright">© GIFOS 2020 All Rights Reserved</p>
         </div>
 
     </footer>
+    <div class="barra">
+    </div>
 
     <script src="./assets/scripts/app.js"></script>
     <script src="./assets/scripts/services/gifos.js"></script>

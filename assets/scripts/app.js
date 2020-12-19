@@ -4,6 +4,26 @@ function toggleClass(){
 }
 
 
+const fruits = ['dog', 'perro', 'cat', 'gato', 'red', 'rojo', 'yellow', 'amarillo']
+
+document.getElementById('search').addEventListener('input', (e)=>{
+
+    let fruitsArray = []; 
+
+    if(e.target.value){
+        fruitsArray = fruits.filter(fruit => fruit.toLocaleLowerCase().includes(e.target.value));
+        fruitsArray = fruitsArray.map(fruit => `<li>${fruit}</li>`)
+    }
+
+    showFruitsArray(fruitsArray);
+});
+
+function showFruitsArray(fruitsArray){
+    const html = !fruitsArray.length ? '' : fruitsArray.join('');
+    document.querySelector('#ul0').innerHTML = html;
+}
+
+
 const APIKEY = "XPopyBNaDradpd7pMdSPbu2jJBntPNKW"
 const ENDPOINT = {
     trending: '/trending', 

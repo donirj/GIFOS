@@ -37,12 +37,17 @@
 
   }
 
+  .logo1{
+    padding-left: 22px;
+  }
+
     
   .li{
     display: flex;
     justify-content: center;
-  
   }
+
+  
 
   .dark{
     font-family: 'Montserrat', sans-serif;
@@ -64,10 +69,15 @@
    
   }
 
+  .hamIcon{
+    padding-right: 22px;
+  }
+
   .row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 29px;
   }
 
   .mainMenu.toggleCls{
@@ -86,6 +96,7 @@
     size: 35px;
     display: flex;
     justify-content: center;
+    padding-top: 24.2px;
   }
 
   .ilustra{
@@ -125,10 +136,30 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .searchbox{
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
+  }
+
+  .searchdiv{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .ul0 .li{
+    display: block;
+    display: none;
+    background:  #572EE5;
+   opacity:0.9;
   }
 
   .trending1{
@@ -138,6 +169,7 @@
     display: flex;
     justify-content: center;
     font-weight: bold;
+    padding-top: 31px;
   }
 
   .reactions{
@@ -208,6 +240,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 46px;
   }
   .trend2{
     color: #000000;
@@ -216,10 +249,10 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 7px;
   }
 
   .trending{
-
     height: 187px;
     display: flex;
     flex-direction: row;
@@ -241,25 +274,53 @@
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     text-align: center;
+    padding-top: 47px;
   }
 
   .icon{
     align-items: center; 
     
+  }
 
+  .foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-family: 'Roboto', sans-serif;
   }
 
   .icon2{
     align-items: center; 
+    padding-top: 20px;
+  }
+
+  .fb{
     color: #CDD6E0;
-    padding: 10px;
+ 
+  }
+
+  .ig{
+    color: #CDD6E0;
+
+  }
+
+  .tw{
+    color: #CDD6E0;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .copyright{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     text-align: center;
+    padding-top: 47px;
   }
+
+ /*
+  *   Página favoritos
+ */
+
 
 
 }
@@ -284,10 +345,13 @@
     box-sizing: border-box;
   }
 
+  
+
   .row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 45px;
   }
 
   .barra{
@@ -299,6 +363,7 @@
   .logo1{
     height: 59.1px;
     width: 59.1px;
+    padding-left: 10.8%;
   }
 
   .hamIcon{
@@ -317,7 +382,9 @@
     padding: 13px;
     font-family: 'Montserrat', sans-serif;
     color: #572EE5;
+
   }
+
 
   .dark{
     font-family: 'Montserrat', sans-serif;
@@ -355,6 +422,16 @@
     align-items: center;
  
   }
+  .search{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searchdiv{
+    display: flex;
+    flex-direction: row;
+  
+  }
 
   .searchicon{
     padding-left: 220px;
@@ -367,6 +444,7 @@
   .ilu{
     display: flex;
     justify-content: center;
+    padding-top: 27px;
   }
   
 /*
@@ -395,6 +473,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 4.8%;
   }
 
   .reactions{
@@ -404,6 +483,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 0.5%;
   }
 
   .btn{
@@ -436,10 +516,10 @@
   }
 
   .trending{
-
     height: 187px;
     display: flex;
     flex-direction: row;
+    
   }
 
   .trend1{
@@ -449,22 +529,59 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 4.4%;
+    padding-bottom: 3.5;
   }
 
   .trend2{
     color: #000000;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 0.8%;
+
   }
   
   /*
   *   Sección footer
   */
   .footer{
- 
+    height: 116px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  .foot{
+    padding-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .icon2{
+    padding-right: 500px
+  }
+
+  .fb{
+    color: #572EE5;
+    opacity: 0.5;
+  }
+
+  .ig{
+    color: #572EE5;
+    opacity: 0.5;
+  }
+
+  .tw{
+    color: #572EE5;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .copyright{
+    size: 13px;
+    font-size: 13px;
   }
 
 

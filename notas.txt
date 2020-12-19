@@ -1,0 +1,23 @@
+giphy autocomplete:
+api.giphy.com/v1/gifs/search/tags
+
+giphy autocomplete:
+api.giphy.com/v1/gifs/search/tags
+
+git init
+git commit -m "first commit"
+git branch -M master
+
+git push -u origin master
+
+git status: status
+git add (nombre de archivo): agrega archivos
+git commit -m "frase"
+git push origin master
+
+//Subir todo
+git add --all
+git commit -am "<commit message>"
+git push
+
+code . = abre una carpeta en especifico en visual studio
