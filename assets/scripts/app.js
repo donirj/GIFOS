@@ -3,33 +3,15 @@ function toggleClass(){
     menu.classList.toggle("toggleCls")
 }
 
-
-const fruits = ['dog', 'perro', 'cat', 'gato', 'red', 'rojo', 'yellow', 'amarillo']
-
-document.getElementById('search').addEventListener('input', (e)=>{
-
-    let fruitsArray = []; 
-
-    if(e.target.value){
-        fruitsArray = fruits.filter(fruit => fruit.toLocaleLowerCase().includes(e.target.value));
-        fruitsArray = fruitsArray.map(fruit => `<li>${fruit}</li>`)
-    }
-
-    showFruitsArray(fruitsArray);
-});
-
-function showFruitsArray(fruitsArray){
-    const html = !fruitsArray.length ? '' : fruitsArray.join('');
-    document.querySelector('#ul0').innerHTML = html;
-}
+const searchbox = document.querySelector('#search')
 
 
 const APIKEY = "XPopyBNaDradpd7pMdSPbu2jJBntPNKW"
 const ENDPOINT = {
     trending: '/trending', 
-    search: '/search'    
+    search: '/search',    
+    autocomplete: '/search/tags',
 }
-
 
 const trendingContainer = document.querySelector('#trending');
 
@@ -37,13 +19,12 @@ function get(endPoint, callback){
 fetch('https://api.giphy.com/v1/gifs'+ endPoint + '?api_key=' + APIKEY + '&limit=3')
 .then( dataType  => dataType.json() )
 .then( apiResponse => callback(apiResponse))
-
 };
 
 const getTrending = () => {
     get(ENDPOINT.trending, (apiReturn) => {
        const {data} = apiReturn;
-console.log(data)
+console.log('linea 27', data)
 console.log(data[5]) 
 
     data.forEach( gifItem => {
@@ -71,6 +52,24 @@ console.log(data[5])
 
 getTrending();
 
+function getAuto(endPoint, callback){
+    fetch('https://api.giphy.com/v1/gifs'+ endPoint + '?api_key=' + APIKEY + '&q=' + searchbox.value + '&limit=4')
+    .then( dataType  => dataType.json())
+    .then( apiResponse => callback(apiResponse))
+    };
+        
+    const getAutocomplete  = () => {
+        getAuto(ENDPOINT.autocomplete, (apiReturn) => {
+            const {data} = apiReturn;
+            console.log(data);
+            console.log(data[2]) 
+})
+}
+
+searchbox.addEventListener('input', getAutocomplete)
+/*
+getAutocomplete();
+*/
 const dark = document.querySelector('.dark')
  dark.addEventListener('click', function(){
      console.log("hola")
