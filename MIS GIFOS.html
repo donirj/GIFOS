@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>MIS GIFOS</title>
 </head>
 <body>
     
+    <header>
+        <nav>
+            <div class="barra">
+            </div>
+            <div class="row">
+                <div class="logo1"> 
+                    <img class="logo1" src="assets/scripts/logo-mobile.svg" alt="logo1">
+                </div>
+                <div class="hamIcon" onclick="toggleClass()">
+                    <img src="./assets/scripts/burger.svg" alt="">
+
+                </div> 
+                <ul class="mainMenu">
+                    <li class="dark colordetexto" >Modo Nocturno</li>
+                    <li class="li1"><a id="idfav" class="nav2 colordetexto" href="favoritos.html">Favoritos</a></li>
+                    <li class="li1"><a id="idmisgifos" class="nav2 colordetexto" href="MIS GIFOS.html">Mis GIFOS</a></li>
+                    <img class="btncrear" src="./assets/scripts/button-crear-gifo.svg" alt="">
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="boxfav1">
+        <img class="corazon1" src="assets/scripts/icon-mis-gifos.svg" alt="" id="icon-mis-gifos">
+        <div class="textfav1">
+            <p class="textfav2">MIS GIFOS</p>
+        </div>
+    </div>    
+
+    <section class="misgifos">
+
+
+    </section>
+    
+    <section class="trendingGIFOS ">
+        <div>
+            <p class="trend1 colordetexto">Trending GIFOS</p>
+        </div>
+        <div>
+            <p class="trend2 ">Mira los últimos GIFOS de nuestra comunidad</p>
+        </div>
+
+        <div class="trending"  id="trending">
+
+        </div>
+
+    </section>
+    
+    <footer class="footer">
+        <div class="foot ">
+                <p class="compartir ">Compartir en:</p>
+            <div class="icon2">
+                <a href="https://es-la.facebook.com/" target="_blank" class="fb colordetexto" id="icon"><i class="fa fa-facebook" ></i></a>
+        
+                <a href="https://twitter.com/?lang=es" target="_blank" class="tw colordetexto" id="icon"><i class="fa fa-twitter "></i></a>
+            
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="ig colordetexto" id="icon"><i class="fa fa-instagram"></i></a>
+                
+            </div>
+                <p class="copyright">© GIFOS 2020 All Rights Reserved</p>
+        </div>
+
+    </footer>
+    <div class="barra">
+    </div>
+
+
+
+    <script src="./assets/scripts/app.js"></script>
 </body>
 </html>
