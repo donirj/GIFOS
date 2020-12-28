@@ -46,7 +46,7 @@
     text-align: center;
     position: absolute;
     width: 100%;
-    height: 200%;
+    height: 205%;
     margin: 0px;
     padding-top: 0px;
     transform: translateY(50px);
@@ -81,12 +81,20 @@
     margin: 50px;
   }
 
+  .li1{
+    padding: 50px;
+  }
+
+  .menubar{
+    height: 5px;
+    color: white;
+
+  }
+
   .nav2{
-  
     color: #FFFFFF;
     size: 16px;
     font-family: 'Montserrat', sans-serif; 
-   
   }
 
   .hamIcon{
@@ -117,6 +125,7 @@
     display: flex;
     justify-content: center;
     padding-top: 24.2px;
+    padding-bottom: 30px;
   }
 
   .ilustra{
@@ -194,6 +203,7 @@
     justify-content: center;
     font-weight: bold;
     padding-top: 31px;
+    padding-bottom: 5px;
   }
 
   .reactions{
@@ -205,7 +215,9 @@
     display: flex;
     justify-content: center;
     text-align: center;
+
   }
+
   .btn{
     background: transparent;
     background: url('/assets/scripts/icon-search.svg');
@@ -230,6 +242,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
   /*
@@ -352,7 +365,7 @@
   }
 
  /*
-  ********************************   Página favoritos
+  ******************************** Favoritos
  */
 
   .boxfav1{
@@ -360,10 +373,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 17px;
   }
 
   .textfav1{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #572EE5;
     font-size: 20px;
   }
@@ -371,6 +385,15 @@
   .textfav2{
 
   }
+
+  /*
+  ********************************  Mis GIFOS
+  */
+
+
+  /*
+  ********************************  Crear GIFOS
+  */
 
 }
 
@@ -401,6 +424,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 25px;
+
     
   }
 
@@ -433,8 +457,8 @@
 
   .btncrear{
     padding-left: 50px;
-    padding-right: 30px;
-    padding-bottom: 100px;
+    padding-right: 150px;
+    padding-bottom: 30px;
   }
 
   .li1{
@@ -466,7 +490,7 @@
     /*
     color: #572EE5;  
     */
-    size: 35px;
+    size: 40px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -517,25 +541,28 @@
     padding-top: 27px;
   }
   
-/*
-*   dark mode
-*/
+  /*
+  *   dark mode
+  */
 
-.darkmode{
-  background-color: #37383C;
-  color: white;
-   
- 
-}
+  .darkmode{
+    background-color: #37383C;
+    color: white;
+    
+  }
+
+  .darktrending{
+    background-color: #222326;
+  }
 
 
-/*
-*   Sección search
-*/
+  /*
+  *   Sección search
+  */
 
-/*
-*   Sección trending
-*/
+  /*
+  *   Sección trending
+  */
   .trending1{
     font-family: 'Montserrat', sans-serif;
     size: 35px;
@@ -618,6 +645,8 @@
     padding-top: 0.8%;
 
   }
+
+
   
   /*
   *   Sección footer
@@ -674,22 +703,113 @@
     padding-left: 550px;
   }
 
-   /*
-  ********************************   Página favoritos
- */
- .boxfav1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  /*
+  ********************************  Página favoritos
+  */
+  .boxfav1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.textfav1{
-  font-family: 'Roboto', sans-serif;
-  color: #572EE5;
-  font-size: 25px;
+  .textfav1{
+    font-family: 'Montserrat', sans-serif;
+    color: #572EE5;
+    font-size: 25px;
+  }
 
-}
+  /*
+  ********************************  Mis GIFOS
+  */
 
+
+  /*
+  ********************************  Crear GIFOS
+  */
+  .video{
+    display: flex;
+    justify-content: center;
+    transform: translateX(-15px);
+  }
+
+  .videobox{
+    height: 390px;
+    width: 688px;
+    border: 1px solid #572EE5;
+    padding: 50px;
+    margin: 20px;
+    margin-top: 0px;
+    margin-left: -5px;
+  }
+
+  .camara{
+    transform: translateY(30%);
+  }
+
+  .luz{
+    transform: translateY(34%);
+  }
+
+  .start{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 19px;
+  }
+
+  .start2{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .start4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .barstart{
+    width: 700px;
+    background-color: #572EE5;
+    height: 6px;
+  
+  }
+
+  .btnstart{
+    border: 1px solid #572EE5;
+    border-radius: 27px;
+    width: 127px;
+    height: 50px;
+    margin-top: 20px;
+  }
+
+  .pelicula{
+    padding-left: 10px;    
+    transform: translateY(380px);
+  }
+
+  .parrafo1{
+    font-family: 'Montserrat', sans-serif;
+    color: #572EE5;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .parrafo2{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 3px;
+  }
+
+  .comenzar{
+    font-size: 13px;
+    color: #572EE5;
+    font-family: 'Montserrat', sans-serif;
+  }
 
 }

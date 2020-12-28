@@ -37,7 +37,7 @@ console.log(data[5])
 
         const template =  `
     
-        <img style="width: 100%; height: 100%; object-fit: cover;"  src=" ${imagesUrl}">
+        <img class="GIFSS" id="GIFSS" style="width: 100%; height: 100%; object-fit: cover;"  src=" ${imagesUrl}">
         
         `
     ;
@@ -75,11 +75,17 @@ const dark = document.querySelector('.dark')
      console.log("hola")
     var element = document.body;
     element.classList.toggle("darkmode");
-var colordetexto = document.querySelectorAll('.colordetexto')
+    var colordetexto = document.querySelectorAll('.colordetexto')
     
     for(let i = 0; i < colordetexto.length; i++){
         
         colordetexto[i].classList.toggle("textonoche")   
        
     }
+
+    
+
+
 })
+
+
