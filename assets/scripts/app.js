@@ -24,10 +24,10 @@ fetch('https://api.giphy.com/v1/gifs'+ endPoint + '?api_key=' + APIKEY + '&limit
 const getTrending = () => {
     get(ENDPOINT.trending, (apiReturn) => {
        const {data} = apiReturn;
-console.log('linea 27', data)
-console.log(data[5]) 
+        console.log('linea 27', data)
+        console.log(data[5]) 
 
-    data.forEach( gifItem => {
+     data.forEach( gifItem => {
         const{
             title,
             images,
@@ -36,17 +36,37 @@ console.log(data[5])
         const imagesUrl = images.original.url
 
         const template =  `
-    
-        <img class="GIFSS" id="GIFSS" style="width: 100%; height: 100%; object-fit: cover;"  src=" ${imagesUrl}">
         
+        
+        <img class="GIFSS" id="GIFSS" style="width: 100%; height: 100%; object-fit: cover;"  src=" ${imagesUrl}">
+        <div class="cuadromorado" >  
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        </div>
         `
     ;
 
-    const gifContainer = document.createElement('div');
-    gifContainer.innerHTML = template;
-    trendingContainer.appendChild(gifContainer)
-  
+        const gifContainer = document.createElement('div');
+        gifContainer.classList.add("gifContainer");
+        gifContainer.innerHTML = template;
+        trendingContainer.appendChild(gifContainer)
+
     });
+    const hovergif = document.querySelectorAll('.GIFSS')
+    const cuadromorado = document.querySelectorAll(".cuadromorado")
+
+    for(let i = 0; i < 3 ;i++){
+        hovergif[i].addEventListener("mouseover",()  => {
+            cuadromorado[i].style.display="flex";
+        })
+        cuadromorado[i].addEventListener("mouseout",()  => {
+            cuadromorado[i].style.display="none";
+        })
+    }
+  
 });
 }
 
@@ -82,9 +102,6 @@ const dark = document.querySelector('.dark')
         colordetexto[i].classList.toggle("textonoche")   
        
     }
-
-    
-
 
 })
 

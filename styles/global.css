@@ -46,10 +46,10 @@
     text-align: center;
     position: absolute;
     width: 100%;
-    height: 205%;
+    height: 209%;
     margin: 0px;
     padding-top: 0px;
-    transform: translateY(50px);
+    transform: translateY(70px);
     
 
   }
@@ -88,6 +88,7 @@
   .menubar{
     height: 5px;
     color: white;
+    
 
   }
 
@@ -123,9 +124,9 @@
     */
     size: 35px;
     display: flex;
-    justify-content: center;
     padding-top: 24.2px;
     padding-bottom: 30px;
+    text-align: center;
   }
 
   .ilustra{
@@ -179,6 +180,25 @@
     padding-right: 45px;
     padding-bottom: 12px;
  
+  }
+
+  .gifContainer{
+    display: flex;
+    width: 243px;
+    height: 187px;  
+    margin-right: 5%;
+
+  }
+
+  .cuadromorado{
+    background:  #572EE5;
+    opacity:0.9;
+    width: 29%;
+    height: 187px;  
+    position: absolute;
+    object-fit: cover;
+    display: none;
+
   }
 
   .searchdiv{
@@ -285,6 +305,7 @@
     text-align: center;
     padding-top: 46px;
   }
+
   .trend2{
     /*
     color: #000000;
@@ -295,6 +316,7 @@
     justify-content: center;
     text-align: center;
     padding-top: 7px;
+    padding-bottom: 53px;
   }
 
   .trending{
@@ -643,9 +665,9 @@
     justify-content: center;
     text-align: center;
     padding-top: 0.8%;
+    padding-bottom: 53px;
 
   }
-
 
   
   /*
@@ -810,6 +832,10 @@
     font-size: 13px;
     color: #572EE5;
     font-family: 'Montserrat', sans-serif;
+    padding: 15px 0;
+    padding-left: 25px;
   }
+
+
 
 }
