@@ -192,7 +192,7 @@
 
   .cuadromorado{
     background:  #572EE5;
-    opacity:0.9;
+    opacity:0.6;
     width: 29%;
     height: 187px;  
     position: absolute;
@@ -201,6 +201,54 @@
 
   }
 
+  .usar{
+    padding-top: 120px;
+    transform: translateX(-75px);
+    font-size: 15px;
+    color: white;
+    opacity: 1;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .titulogifo{
+    padding-top: 145px;
+    transform: translateX(-105px);
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .heart{
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    transform: translateX(65px);
+  }
+
+  .save{
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color:  #FFFFFF;
+    transform: translateX(75px);
+  }
+
+  .expandir{
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    transform: translateX(85px);
+
+  }
+
+
+  
   .searchdiv{
     display: flex;
     flex-direction: row;
@@ -311,7 +359,7 @@
     color: #000000;
     */
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -641,7 +689,8 @@
     height: 187px;
     display: flex;
     flex-direction: row;
-    
+    justify-content: center;
+    align-items: center;
   }
 
   .trend1{
@@ -669,6 +718,73 @@
 
   }
 
+   .gifContainer{
+    display: flex;
+    width: 357px;
+    height: 275px;  
+    margin-right: 5%;
+    
+  }
+
+  .cuadromorado{
+    background:  #572EE5;
+    opacity:0.6;
+    width: 28%;
+    height: 276px;  
+    position: absolute;
+    object-fit: cover;
+    display: none;
+
+  }
+
+  
+  .usar{
+    padding-top: 190px;
+    transform: translateX(-75px);
+    font-size: 15px;
+    color: white;
+    opacity: 1;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .titulogifo{
+    padding-top: 220px;
+    transform: translateX(-105px);
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .heart{
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    transform: translateX(110px);
+  }
+
+  .save{
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color:  #FFFFFF;
+    transform: translateX(130px);
+  }
+
+  .expandir{
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    transform: translateX(150px);
+    display: flex;
+    flex-direction: row;
+
+  }
   
   /*
   *   Sección footer

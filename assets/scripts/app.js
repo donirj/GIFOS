@@ -39,12 +39,13 @@ const getTrending = () => {
         
         
         <img class="GIFSS" id="GIFSS" style="width: 100%; height: 100%; object-fit: cover;"  src=" ${imagesUrl}">
-        <div class="cuadromorado" >  
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="cuadromorado">  
+        <div class="heart"><img src="/assets/scripts/icon-fav.svg" alt=""></div>
+        <div class="save"> <img src="/assets/scripts/icon-download.svg" alt=""> </div>
+        <div class="expandir"> <img src="/assets/scripts/icon-max-normal.svg" alt=""> </div>
+        <div class="usar">Usar</div>
+        <div class="titulogifo" id="titulogifo">Titulo Gifo</div>
+        
         </div>
         `
     ;
@@ -57,6 +58,7 @@ const getTrending = () => {
     });
     const hovergif = document.querySelectorAll('.GIFSS')
     const cuadromorado = document.querySelectorAll(".cuadromorado")
+   
 
     for(let i = 0; i < 3 ;i++){
         hovergif[i].addEventListener("mouseover",()  => {
