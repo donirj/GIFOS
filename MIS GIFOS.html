@@ -13,21 +13,22 @@
     
     <header>
         <nav>
-            <div class="barra">
+            <div class="barra lightbars">
             </div>
             <div class="row">
                 <div class="logo1"> 
                     <a href="index.html"><img class="logo1"  src="assets/scripts/logo-mobile.svg" alt="logo1"></a>
                 </div>
                 <div class="hamIcon" onclick="toggleClass()">
-                    <img src="./assets/scripts/burger.svg" alt="">
+                    <img src="" alt="">
+                    <div id="burger" class="burger-off"></div>
 
                 </div> 
                 <ul class="mainMenu">
                     <li class="dark colordetexto" >Modo Nocturno</li>
                     <li class="li1"><a id="idfav" class="nav2 colordetexto" href="favoritos.html">Favoritos</a></li>
                     <li class="li1"><a id="idmisgifos" class="nav2 colordetexto" href="MIS GIFOS.html">Mis GIFOS</a></li>
-                    <a href="CrearGifo.html"><img class="btncrear" src="./assets/scripts/button-crear-gifo.svg" alt=""></a>
+                    <a href="./CrearGifo.html"><img class="btncrear" src="./assets/scripts/button-crear-gifo.svg" alt=""></a>
                 </ul>
             </div>
         </nav>
@@ -36,7 +37,7 @@
     <div class="boxfav1">
         <img class="corazon1" src="assets/scripts/icon-mis-gifos.svg" alt="" id="icon-mis-gifos">
         <div class="textfav1">
-            <p class="textfav2">MIS GIFOS</p>
+            <p class="textfav2 colordetexto">MIS GIFOS</p>
         </div>
     </div>    
 
@@ -45,7 +46,7 @@
 
     </section>
     
-    <section class="trendingGIFOS ">
+    <section class="trendingGIFOS lighttrending">
         <div>
             <p class="trend1 colordetexto">Trending GIFOS</p>
         </div>
@@ -58,7 +59,7 @@
         </div>
 
     </section>
-    
+     
     <footer class="footer">
         <div class="foot ">
                 <p class="compartir ">Compartir en:</p>
@@ -66,7 +67,7 @@
                 <a href="https://es-la.facebook.com/" target="_blank" class="fb colordetexto" id="icon"><i class="fa fa-facebook" ></i></a>
         
                 <a href="https://twitter.com/?lang=es" target="_blank" class="tw colordetexto" id="icon"><i class="fa fa-twitter "></i></a>
-            
+             
                 <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="ig colordetexto" id="icon"><i class="fa fa-instagram"></i></a>
                 
             </div>
@@ -74,11 +75,12 @@
         </div>
 
     </footer>
-    <div class="barra">
+    <div class="barra lightbars">
     </div>
 
 
-
+    <script src="./assets/scripts/services/js.js"></script>
     <script src="./assets/scripts/app.js"></script>
+
 </body>
 </html>

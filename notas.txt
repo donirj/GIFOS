@@ -23,3 +23,24 @@ git push
 code . = abre una carpeta en especifico en visual studio
 
 #222326 seccion trending oscuro
+
+1) boton de comenzar = cambia texto y prende boton que dice 1
+2) si picas el boton que dice 1 desaparece todo el texto y activa la camara
+
+Juan Guillermo Zapata12:12
+//------------------Metodo search---------------------
+    this.getSearch = function (callback, busca, limit) {
+        fetch(this.endPoints.urlBase + this.endPoints.search  + '?api_key=' + this.apiKey + '&q='+ busca + '&limit='+ limit)
+        .then(dataType => dataType.json())
+        .then( response => {
+            callback(response.data);
+        });
+    }
+-----------------------------------------------------------------------
+ data.forEach(elemento => {
+        const lista = document.createElement('div');
+        lista.classList.add("imageGiphy");
+        lista.innerHTML = `<img src= ${elemento.images.original.url}/>`;
+        searchContainer.appendChild(lista)
+
+        })

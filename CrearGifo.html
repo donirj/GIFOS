@@ -9,10 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Crear GIFO</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <div class="barra">
+            <div class="barra lightbars">
             </div>
         
             <div class="row">
@@ -20,42 +21,51 @@
                     <a href="index.html"><img class="logo1" src="assets/scripts/logo-mobile.svg" alt="logo1"></a>
                 </div>
                 <div class="hamIcon" onclick="toggleClass()">
-                    <img src="./assets/scripts/burger.svg" alt="">
+                    <img src="" alt="">
+                    <div id="burger" class="burger-off"></div>
 
                 </div> 
-                <ul class="mainMenu">
+                <ul class="mainMenu">   
                     <li class="dark colordetexto" >Modo Nocturno</li>
                     <li class="li1"><a id="idfav" class="nav2 colordetexto" href="favoritos.html">Favoritos</a></li>
                     <li class="li1"><a id="idmisgifos" class="nav2 colordetexto" href="MIS GIFOS.html">Mis GIFOS</a></li>
-                    <a href="CrearGifo.html"><img class="btncrear" src="./assets/scripts/button-crear-gifo.svg" alt=""></a>
+                    <a href="CrearGifo.html"><img class="btncrear" src="./assets/scripts/CTA-crear-gifo-active.svg" alt=""></a>
                 </ul>
             </div>
         </nav>
     </header>
 
     <section class="creaGIFOS">
-        <div class="video">
+        <div class="video" id="video">
             <div class="camara" ><img src="/assets/scripts/camara.svg" alt=""></div>
             <div class="luz"><img src="/assets/scripts/element-luz-camara.svg" alt=""></div>
-            <div class="videobox">
-                <p class="parrafo1">Aquí podrás <br> crear tus propios GIFOS</p>
-                <p class="parrafo2">¡Crea tu GIFO en sólo 3 pasos! <br> (sólo necesitas una cámara para grabar un video)</p>
-            </div>
-            <div> <img class="pelicula" src="/assets/scripts/pelicula.svg" alt=""></div>
-            <div></div>
+            
+            <div class="videobox"></div>
+            <video id="videocamara" class="videocamara" src=""></video> 
+
+                <div class="acceso3" id="acceso3">
+                    <div><p id="demo" class="parrafo1 colordetexto">Aquí podrás crear tus propios GIFOS<br>
+                            <p id="demo" class="parrafo2 colordetexto">¡Crea tu GIFO en sólo 3 pasos! <br> (sólo necesitas una cámara para grabar un video)</p>
+                        </p></div>
+                        
+                </div>
+   
+            <div class="pelicula"><img class="pelicula" src="/assets/scripts/pelicula.svg" alt=""></div>
+          
         </div>
+    
         <div class="start">
-            <div><img class="start1" src="/assets/scripts/paso-a-paso.svg" id="" alt=""></div>
-            <div><img class="start2" src="/assets/scripts/paso-a-paso.svg" id="" alt=""></div>
-            <div><img class="start3" src="/assets/scripts/paso-a-paso.svg" id="" alt=""></div>
+            <button onclick="show_hide()" class="dot1" id="dot1"><p class="uno colordetexto">1</p></button>
+            <span class="dot2"><p class="uno colordetexto">2</p></span>
+            <span class="dot3"><p class="uno colordetexto">3</p></span>
 
         </div>
      
         <div class="start4">
             <div class="barstart"></div>
-            <div class="btnstart">
+            <button  class="btnstart" id="btnstart" onclick="myFunction()">
                 <p class="comenzar">Comenzar</p>
-            </div>
+            </button>
         </div>
 
 
@@ -76,9 +86,12 @@
         </div>
 
     </footer>
-    <div class="barra">
+    <div class="barra lightbars">
     </div>
 
+    
+    
     <script src="./assets/scripts/app.js"></script>
+    <script src="./assets/scripts/services/js.js"></script>
 </body>
 </html>
